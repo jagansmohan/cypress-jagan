@@ -1,0 +1,32 @@
+{
+  "watchForFileChanges": false,
+  "pluginsFile": false,
+  "chromeWebSecurity": false,
+  "testFiles": [
+    "**/*.{feature,features}",
+    "thinkific_main_script.js",
+    "apiTesting_ignore.js"
+  ],
+  "retries": 1,
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": true,
+    "json": true
+  },
+  "baseUrl": "https://www.thinkific.com/",
+  "projectId": "d5zibb",
+  "experimentalStudio": true,
+  "env": {
+    "db": {
+      "host": "db4free.net",
+      "user": "username",
+      "password": "password",
+      "database": "db_name"
+    },
+     "think":{
+       "username" : "jagansmohan@gmail.com",
+       "password" : "somepassword"
+      }
+    }
+  }
